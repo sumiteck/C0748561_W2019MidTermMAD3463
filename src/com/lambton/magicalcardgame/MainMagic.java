@@ -12,9 +12,10 @@ public class MainMagic {
         String[][] matrix = {{"9", "2", "6"}, {"j", "l", "q"}, {"7", "8", "5"}};
         magicalCardGameModel.setCardList(matrix);
         showMatrix(magicalCardGameModel.getCardList());
-        Scanner sc= new Scanner(System.in);
+        Scanner scan= new Scanner(System.in);
         System.out.println("Enter the column Number which contains your card");
-        System.out.print("Please select anyone no. from card matrix");
+        magicalCardGameModel.setFirstShuffleColPos(scan.nextLine());
+        magicalCardGameCalculator.getFirstShuffleResult(magicalCardGameModel);
 
 
     }
