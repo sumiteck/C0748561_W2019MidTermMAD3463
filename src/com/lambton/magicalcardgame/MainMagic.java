@@ -19,6 +19,17 @@ public class MainMagic {
 
 
     }
+
+    private static void counter(String[][] cardList) {
+        String matrixx[][] = new String[3][3];
+        for (int i = 0; i < cardList.length; i++) {
+            for (int j = 0; j < cardList[i].length; j++) {
+                matrixx[i][j] = cardList[j][i];
+            }
+        }
+        showMatrix(matrixx);
+        shuffleColumns(matrixx);
+    }
     private static void shuffleColumns(String[][] matrixx) {
 
         //x for 1 y for 2
