@@ -16,6 +16,11 @@ public class MainMagic {
         System.out.println("Enter the column Number which contains your card");
         magicalCardGameModel.setFirstShuffleColPos(scan.nextLine());
         magicalCardGameCalculator.getFirstShuffleResult(magicalCardGameModel);
+        System.out.println("Enter the Column no. which shows your no.");
+        magicalCardGameModel.setSecShuffleColPos(scan.nextLine());
+        magicalCardGameCalculator.getSecShuffleResult(magicalCardGameModel);
+        System.out.println("your no. is");
+        magicalCardGameModel.setGuessedCard(scan.nextLine());
 
 
     }
