@@ -19,6 +19,21 @@ public class MainMagic {
 
 
     }
+    private static void shuffleColumns(String[][] matrixx) {
+
+        //x for 1 y for 2
+        int x=1;
+        int y=2;
+        String temp;
+        String[][] shuffleMatrix= matrixx;
+        for(int i = 0; i < 3; i++)
+        {
+            temp = shuffleMatrix[(x-1)][i];
+            shuffleMatrix[x-1][i] = shuffleMatrix[y-1][i];
+            shuffleMatrix[y-1][i] = temp;
+        }
+        showMatrix(shuffleMatrix);
+    }
 
     private static void showMatrix(String[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
