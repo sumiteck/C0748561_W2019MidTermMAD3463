@@ -1,8 +1,13 @@
 package com.lambton.magicalcardgame;
 
+import java.util.Arrays;
+
 public class MagicalCardGameModel  {
 
-
+String[][] magiccard={   {"1","6","7"},
+        {"j","k","r"},
+        {"4","5","8"}
+};
     String firstShuffleColPos;
     String secShuffleColPos;
     String[][]cardList=null;
@@ -14,6 +19,7 @@ public class MagicalCardGameModel  {
     public String[][] getFirstShuffleResult(MagicalCardGameModel magicalCardGameModel) {
         return new String[0][];
     }
+
 
     public String[][]
     getSecShuffleResult(MagicalCardGameModel magicalCardGameModel) {
